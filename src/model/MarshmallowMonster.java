@@ -27,7 +27,7 @@ public class MarshmallowMonster
 	
 	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNose, int arms)
 	{
-		this.name = name; 
+		this.name = name;
 		this.legCount = legCount;
 		this.eyeCount = eyeCount; 
 		this.hasNoses = hasNose; 
@@ -36,7 +36,13 @@ public class MarshmallowMonster
 	
 	public String toString()
 	{
-		String description = ""; 
+		String description = "This monster is named " + name 
+				+ " and it has " + legCount + " legs... \n"
+				+ "It also has " + eyeCount + " eyes"
+				+ " and " + armCount + " arms. \n"
+				+ "It is " + hasNoses + " that Spence has a nose. \n"
+				+ "He loves to jump out and scare people by saying: "
+				+ "Boo!!! XD" ; 
 		
 		return description; 
 	}

@@ -11,7 +11,8 @@ public class MController
 	//Constructors initialize data members
 	public MController()
 	{
-		myMonster = new MarshmallowMonster("Spence");
+		myMonster = new MarshmallowMonster("Spence", 1.75, 3, true, 5); //If you did not assign a value the answer will be "noll" for words and 0 for numbers
+		//^ this is the Call. Everything has to be in the same order as 
 	}
 	
 	public void start() 

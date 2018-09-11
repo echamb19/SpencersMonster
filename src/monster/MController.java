@@ -11,7 +11,7 @@ public class MController
 	//Constructors initialize data members
 	public MController()
 	{
-		myMonster = new MarshmallowMonster();
+		myMonster = new MarshmallowMonster("Spence");
 	}
 	
 	public void start() 

@@ -20,9 +20,18 @@ public class MarshmallowMonster
 	public MarshmallowMonster(String name)
 	{ 
 		this.name = name; 
-				//this talks about the current object
+				//this talks about the current object (File I'm working on right now
 				// How to assign a parameter into an instance. 
 				
+	}
+	
+	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNose, int arms)
+	{
+		this.name = name; 
+		this.legCount = legCount;
+		this.eyeCount = eyeCount; 
+		this.hasNoses = hasNose; 
+		this.armCount = arms; 
 	}
 	
 	public String toString()

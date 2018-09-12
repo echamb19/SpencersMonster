@@ -44,6 +44,7 @@ public class MarshmallowMonster
 		return legCount; 
 	}
 	
+	public int geteyeCount()
 	{ 
 		return eyeCount;
 	}
@@ -53,7 +54,7 @@ public class MarshmallowMonster
 		return hasNoses; 
 	}
 	
-	public int getArms()
+	public int getArmCount()
 	{
 		return armCount;
 	}
@@ -80,7 +81,7 @@ public class MarshmallowMonster
 	
 	public void setArmCount(int armCount)
 	{
-		this.armCount = arms
+		this.armCount = armCount;
 	}
 	
 	public String toString()

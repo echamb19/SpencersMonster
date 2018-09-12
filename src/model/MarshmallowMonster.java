@@ -33,8 +33,59 @@ public class MarshmallowMonster
 		this.hasNoses = hasNose; 
 		this.armCount = arms; 
 	}
+
+	public String getName() 
+	{
+		return name; 
+	}
+
+	public double getLegCount()
+	{
+		return legCount; 
+	}
+	
+	{ 
+		return eyeCount;
+	}
+	
+	public boolean getHasNose()
+	{
+		return hasNoses; 
+	}
+	
+	public int getArms()
+	{
+		return armCount;
+	}
+	
+	public void setName(String name)
+ 	{
+ 		this.name = name;
+ 	}
+	
+	public void setLegCount(double legCount)
+	{
+		this.legCount = legCount;
+	}
+	
+	public void setEyeCount(int eyeCount)
+	{
+		this.eyeCount = eyeCount; 
+	}
+	
+	public void setHasNose(boolean hasNose)
+	{
+		this.hasNoses = hasNose; 
+	}
+	
+	public void setArmCount(int armCount)
+	{
+		this.armCount = arms
+	}
 	
 	public String toString()
+ 	
+ 	
 	{
 		String description = "This monster is named " + name 
 				+ " and it has " + legCount + " legs... \n"

@@ -44,7 +44,7 @@ public class MarshmallowMonster
 		return legCount; 
 	}
 	
-	public int geteyeCount()
+	public int getEyeCount()
 	{ 
 		return eyeCount;
 	}

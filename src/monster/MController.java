@@ -23,6 +23,7 @@ public class MController
 	public void start() 
 	{
 		Scanner inputScanner = new Scanner(System.in); 
+		
 		JOptionPane.showMessageDialog(null,myMonster); //The null says no one owns window (Fastest way to make a Gui) 
 		System.out.println(myMonster);	
 		
@@ -66,17 +67,19 @@ public class MController
 		
 		
 		//System.out.println("Your monster has a nose = true or false?");
-		JOptionPane.showMessageDialog(null, "Is this statement true or false: Your monster has a nose."); 
-		boolean hasNoses = inputScanner.nextBoolean();
+		//boolean hasNoses = inputScanner.nextBoolean();
+		userInput = JOptionPane.showInputDialog(null, "Is this statement true or false: Your monster has one or more noses.");
+		
 		userMonster.setHasNose(hasNoses);
 		System.out.println("The statement 'Your monster has a nose.' is " + userMonster.getHasNose() + "." );
 		
 		boolean answer = Boolean.parseBoolean(userInput);
 		
 	
-		//System.out.println("How many eyes does your monster have?");
+		//System.out.println("How many eyes does your monster have?");		
+		//int eyeCount = inputScanner.nextInt();
 		JOptionPane.showMessageDialog(null, "How many eyes?");
-		int eyeCount = inputScanner.nextInt();
+
 		userMonster.setEyeCount(eyeCount);
 		System.out.println("Your monster has " + userMonster.getEyeCount() + "eyes. :)");
 		

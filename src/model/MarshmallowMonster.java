@@ -25,11 +25,11 @@ public class MarshmallowMonster
 				
 	}
 	
-	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNose, int arms)
+	public MarshmallowMonster(String name, double legCount, int eyes, boolean hasNose, int arms)
 	{
 		this.name = name;
 		this.legCount = legCount;
-		this.eyeCount = eyeCount; 
+		this.eyeCount = eyes; 
 		this.hasNoses = hasNose; 
 		this.armCount = arms; 
 	}
@@ -69,9 +69,9 @@ public class MarshmallowMonster
 		this.legCount = legCount;
 	}
 	
-	public void setEyeCount(int eyeCount)
+	public void setEyeCount(int eyes)
 	{
-		this.eyeCount = eyeCount; 
+		this.eyeCount = eyes; 
 	}
 	
 	public void setHasNose(boolean hasNose)

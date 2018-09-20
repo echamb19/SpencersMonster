@@ -39,18 +39,7 @@ public class MController
 			JOptionPane.showMessageDialog(null, "That's cool.");
 			
 			
-		//System.out.println("How many arms would you like your monster to have?"); 
-		//int arms = inputScanner.nextInt();
-		//System.out.println("Your monster has " + userMonster.getArmCount() + " arms!); ");
-	
-		userInput = JOptionPane.showInputDialog(null, "How many arms?");	
-		int arms = 5;
-		if (validInt(userInput))
-		{
-			arms = Integer.parseInt(userInput);
-		}
-		userMonster.setArmCount(arms);
-		
+
 		
 		//System.out.println("How many legs do you want it to have?"); 
 		//double legCount = inputScanner.nextDouble();
@@ -70,19 +59,39 @@ public class MController
 		//boolean hasNoses = inputScanner.nextBoolean();
 		userInput = JOptionPane.showInputDialog(null, "Is this statement true or false: Your monster has one or more noses.");
 		
-		userMonster.setHasNose(hasNoses);
-		System.out.println("The statement 'Your monster has a nose.' is " + userMonster.getHasNose() + "." );
-		
+		JOptionPane.showMessageDialog(null, "The statement 'Your monster has a nose or two.' is " + userMonster.getHasNose() + "." );
+				
 		boolean answer = Boolean.parseBoolean(userInput);
-		
-	
-		//System.out.println("How many eyes does your monster have?");		
-		//int eyeCount = inputScanner.nextInt();
-		JOptionPane.showMessageDialog(null, "How many eyes?");
+			if (userMonster.getHasNose() == true)
+			{
+				userMonster.setHasNose(answer);
 
-		userMonster.setEyeCount(eyeCount);
-		System.out.println("Your monster has " + userMonster.getEyeCount() + "eyes. :)");
+			}
+	
+		//System.out.println("How many arms would you like your monster to have?"); 
+		//int arms = inputScanner.nextInt();
+		//System.out.println("Your monster has " + userMonster.getArmCount() + " arms!); ");
 		
+		userInput = JOptionPane.showInputDialog(null, "How many arms?");	
+		int arms = 5;
+		if (validInt(userInput))
+			{
+				arms = Integer.parseInt(userInput);
+			}
+			userMonster.setArmCount(arms);
+			
+			//System.out.println("How many eyes does your monster have?");		
+			//int eyeCount = inputScanner.nextInt();
+		
+			
+		userInput = JOptionPane.showInputDialog(null, "How many eyes?");
+		int eyes = 5;
+		if (validInt(userInput))
+			{
+				eyes = Integer.parseInt(userInput);
+			}
+		userMonster.setEyeCount(eyes);
+		JOptionPane.showMessageDialog(null, "Your monster has " + userMonster.getEyeCount() + " eyes. :)");
 		
 		
 		

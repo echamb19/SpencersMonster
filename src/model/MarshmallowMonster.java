@@ -2,7 +2,14 @@ package model;
 
 public class MarshmallowMonster
 {
-	//--> Declaration Section <--
+	/*--> Declaration Section or Initialization Section <--
+	Data Member section
+	Also called instance variables 
+	All numbers are 0 
+	All booleans are false
+	Objects are null
+	*/
+	
 	private String name; 
 	private double legCount; 
 	private int eyeCount; 
@@ -12,17 +19,18 @@ public class MarshmallowMonster
 	
 	public MarshmallowMonster()
 	{
-		//Default constructor (generic, not as cool)
-		//Default constructor initializes stuff. 
-		// Generally is boring and isn't as helpful. 
+		/*Default constructor (generic, not as cool)
+		Default constructor initializes stuff. 
+		Generally is boring and isn't as helpful.
+		*/ 
 	}
 	
 	public MarshmallowMonster(String name)
 	{ 
 		this.name = name; 
-				//this talks about the current object (File I'm working on right now
-				// How to assign a parameter into an instance. 
-				
+				/*"this" talks about the current object (File I'm working on right now
+				 How to assign a parameter into an instance. 
+				*/
 	}
 	
 	public MarshmallowMonster(String name, double legCount, int eyes, boolean hasNose, int arms)

@@ -22,10 +22,10 @@ public class MController
 	
 	public void start() 
 	{
-		Scanner inputScanner = new Scanner(System.in); 
+		//Scanner inputScanner = new Scanner(System.in); 
 		
 		JOptionPane.showMessageDialog(null,myMonster); //The null says no one owns window (Fastest way to make a Gui) 
-		System.out.println(myMonster);	
+		//System.out.println(myMonster);	
 		
 		//System.out.println("What would you like your monster's name to be?");
 		//String name = inputScanner.nextLine(); 
@@ -64,10 +64,9 @@ public class MController
 		boolean answer = Boolean.parseBoolean(userInput);
 			if (userMonster.getHasNose() == true)
 			{
-				userMonster.setHasNose(answer);
-
+				//Doesn't work--> hasNose = boolean.parseboolean(userInput);
 			}
-	
+				userMonster.setHasNose(answer);
 		//System.out.println("How many arms would you like your monster to have?"); 
 		//int arms = inputScanner.nextInt();
 		//System.out.println("Your monster has " + userMonster.getArmCount() + " arms!); ");
@@ -96,7 +95,7 @@ public class MController
 		
 		
 		
-		inputScanner.close();
+		//inputScanner.close();
 	}
 	
 
@@ -122,6 +121,7 @@ public class MController
 		try
 		{
 			Integer.parseInt(maybeInt);
+			isValid = true;
 		}
 		catch (NumberFormatException error) //Two things inside perens is formal perameter
 		{
